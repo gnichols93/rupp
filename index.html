@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<style>
+		body, p {
+			margin: 0px;
+			padding: 0px;
+			
+		}
+		
+		div{
+			vertical-align: top;
+			margin: 0px;
+			padding: 0px;
+			font-size: 0px;
+		}
+		
+	@media screen and (max-width: 420px) {
+	.skinnyView {
+		width: 100% !important;	
+	}
+	
+}
+	</style>
+
+	
+<title>Javascript Version</title>
+	
+</head>
+
+<body style="">
+	<div style="position: relative; width: 100%; text-align: center; height: 85vh; min-height: 850px; background-color: #fff;">
+		<div id="splashHeaderLeft" style="background-image: url(''); background-position: right; background-size: cover; background-color: #fff;  display: inline-block; width: 30%; height: 100%;">
+		</div>
+		<div style="display: inline-block; width: 40%; max-width: 850px; font-size: 12px; height: 100%; background-color: #fff; position: relative;">
+			<div style="padding: 0px 0px; font-size: 18px; line-height: 24px; font-family:  'Montserrat', Century Gothic, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'; position: relative; top: 50%; transform: translateY(-50%);">
+				<img src="images/logo/rupp-massage-logo-homepage.png" style="width: 60%; max-width: 500px; min-width: 300px; padding: 0px 0px 15px;">
+				<p style="padding: 20px 20px 20px; font-size: 24px; ">Athletic Grade Healing</p>
+				<p style="padding: 40px 0px 20px;"><span style=" font-family: 'Asap'; font-weight: bold; font-style: italic; "><span style="color: #8ac640;">Rupp</span>Massage</span> specializes in the care and recovery of athletes in the greater Indianapolis area. Through intentional and focused massage applications, athletes and those recovering from injuries can accelerate healing and speed their recovery.</p>
+			<p style="padding: 0px 0px 20px;"><span style=" font-family: 'Asap'; font-weight: bold; font-style: italic; "><span style="color: #8ac640;">Rupp</span>Massage</span> takes a very intentional approach to your recovery. You need health partners who focus on muscle recovery to deliver better body performance. <span style=" font-family: 'Asap'; font-weight: bold; font-style: italic; "><span style="color: #8ac640;">Rupp</span>Massage</span> provides therapeutic massage for some of the top Indianapolis-area athletes, including Colts players, Indy car drivers, &amp; professional cyclists. Book an appointment and you will see the difference between retail massage and <span style=" font-family: 'Asap'; font-weight: bold; font-style: italic; "><span style="color: #8ac640;">Rupp</span>Massage</span>.</p>
+			<div style="background-color: #8ac640; font-size: 16px; color: #fff; padding: 10px 35px; margin: 30px auto; width: auto; border-radius: 50px; display: inline-block;">Book an Appointment</div>
+				<div></div>
+				<div style="font-size: 18px; display: inline-block; padding: 20px 5px 0px; width: 30%; min-width: 250px;">
+					<p>Hot stone</p>
+					<p>Deep tissuee</p>
+					<p>Injury recovery</p>
+				</div>
+				<div style="font-size: 18px; display: inline-block; padding: 20px 5px 0px; width: 30%; min-width: 250px;">
+					<p>Cupping</p>
+					<p>Oxygen bar</p>
+					<p>Essential oils and CBD</p>
+				</div>
+			</div>
+		</div>
+		<div id="splashHeaderRight" style="background-image: url('images/basketball/istockphoto-1135320571-2048x2048.jpg'); background-position: left; background-size: cover; display: inline-block; width: 30%; height: 100%;">
+		</div>
+	
+	</div>
+	
+	<script type="text/javascript">
+			
+	var leftSideImages = ['leftSideRunning.jpg', 'leftSideCycling.jpg', 'leftSideSkiing.jpg', 'leftSideVolleyball.jpg', 'leftSideGolfing.jpg', 'leftSideLifting.jpg', 'leftSideTennis.jpg'];
+	var rightSideImages = ['rightSideRunning.jpg', 'rightSideCycling.jpg', 'rightSideSkiing.jpg', 'rightSideVolleyball.jpg', 'rightSideGolfing.jpg', 'rightSideLifting.jpg', 'rightSideTennis.jpg'];
+	
+	function setLeftSideImage() {
+		var randomNumber = Math.floor(Math.random() * leftSideImages.length);
+		document.getElementById("splashHeaderLeft").style.backgroundImage = 'url(images/splashHeader/'+leftSideImages[randomNumber]+')';
+		
+		rightSideImages.splice(randomNumber, 1);
+		var randomNumber2 = Math.floor(Math.random() * rightSideImages.length);
+		document.getElementById("splashHeaderRight").style.backgroundImage = 'url(images/splashHeader/'+rightSideImages[randomNumber2]+')';
+	};
+	
+	setLeftSideImage();
+	
+</script>
+</body>
+</html>

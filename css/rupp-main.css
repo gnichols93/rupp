@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	margin: 0px;
+	padding: 0px;
+}
+		
+.rupp-main-div{
+	position: relative; 
+	width: 100%; 
+	text-align: center; 
+	height: 850px; 
+	background-color: #fff;
+	vertical-align: top;
+	margin: 0px;
+	padding: 0px;
+	font-size: 0px;
+}
+
+#splashHeaderLeft{
+	background-image: url(''); 
+	background-position: right; 
+	background-size: cover; 
+	display: inline-block; 
+	width: 30%; 
+	height: 100%;
+	
+}
+#splashHeaderRight{
+	background-image: url('images/basketball/istockphoto-1135320571-2048x2048.jpg'); 
+	background-position: left; 
+	background-size: cover; 
+	display: inline-block; 
+	width: 30%; 
+	height: 100%;
+}
+
+#splashHeaderMiddle{
+	display: inline-block; 
+	width: 40%; 
+	max-width: 850px; 
+	height: 100%; 
+	position: relative;
+	vertical-align: top;
+}
+#splashHeaderMiddle img{
+	display: inline-block;
+	width: 90%;
+	max-width: 500px;
+	padding-top: 8%;
+	
+}
+
+#splashHeaderContent{
+	padding: 0px 0px; 
+	margin: 0px auto;
+	font-size: 18px; 
+	line-height: 24px; 
+	font-family: 'Montserrat', Century Gothic, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	position: absolute; 
+	top: 300px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 40%; 
+	max-width: 850px; 
+	height: 100%; 
+	text-align: center;
+}
+
+#athleticGrade{
+	font-family: 'Montserrat', Century Gothic, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	color: #545454;
+	padding: 20px 20px 20px; 
+	margin: 0px;
+	font-size: 24px; 
+}
+
+.contentParagraph{
+	padding: 20px 0px 5px;
+	margin: 0px;
+}
+
+.ruppWordmark{
+	font-family: 'Asap', Helvetica, Arial, 'sans-serif';
+	font-weight: bold;
+	font-style: italic; 
+}
+.ruppGreen{
+	color: #8ac640;
+}
+#ruppButton{
+	background-color: #8ac640;
+	font-size: 16px;
+	color: #fff;
+	padding: 10px 35px;
+	margin: 30px auto;
+	width: auto;
+	border-radius: 50px;
+	display: inline-block;
+	border: 1px solid #8ac640;
+}
+#ruppButton:hover {
+	color: #8ac640;
+	background-color: #ffffff;
+	border: 1px solid #8ac640;
+	font-weight: bold;
+}
+
+.ruppOfferings{
+	font-size: 18px;
+	display: inline-block;
+	padding: 0px 5px;
+	width: 40%;
+	min-width: 200px;
+}
+.ruppOfferings p{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* ============ media query ============*/
+@media screen and (max-width: 1410px) {
+.rupp-main-div{
+	height: 500px;
+	}
+	
+#splashHeaderLeft{
+	width: 30%; 
+	height: 100%;
+	
+}
+#splashHeaderRight{
+	width: 30%; 
+	height: 100%;
+}
+
+#splashHeaderMiddle{
+	width: 40%; 
+}
+#splashHeaderMiddle img{
+	padding: 180px 0px 0px;
+
+	
+}
+
+#splashHeaderContent{
+	position: static;
+	transform: translateX(0%);
+	width: 100%;
+	max-width: 90%;
+	padding: 20px;
+
+}
+	.ruppOfferings{
+		font-size: 18px;
+	}	
+	
+}
+/* ============ END media query ============*/
+
+/* ============ media query ============*/
+@media screen and (max-width: 875px) {
+	#athleticGrade{
+		font-size: 18px;
+	}
+}
+/* ============ media query ============*/
+@media screen and (max-width: 710px) {
+	#athleticGrade{
+		font-size: 14px;
+	}
+}
+
+/* ============ media query ============*/
+@media screen and (max-width: 570px) {
+	#splashHeaderContent{
+	font-size: 16px; 
+	}
+	.ruppOfferings{
+	display: block;
+		width: 100%;
+}
+}
+/* ============ media query ============*/
+@media screen and (max-width: 525px) {
+	.rupp-main-div{
+	background-color: #000;
+		height: 300px;
+	}
+	#splashHeaderLeft{
+	display: none;
+}
+	#splashHeaderRight{
+	display: none;
+}
+	#splashHeaderMiddle{
+	width: 100%;
+		background-image: url("../images/logo/RM-white-wtag.png");
+		background-position: center;
+		background-size: 75%;
+		background-repeat: no-repeat;
+}
+	#splashHeaderMiddle img{
+	display: none;
+}
+	#athleticGrade{
+	display: none;
+}
+}
+
+
+
+
